@@ -1,0 +1,173 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+a:hover { color:blue; text-decoration: underline;}
+
+hr {
+    width: 97%;
+    margin: 2px 0;
+}
+
+/* 
+ * header styles 
+ */
+header {
+    display: flex;
+    margin: 10px;
+}
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+header div {
+    margin: 0 5px;
+}
+
+header h1{
+    margin: 5px auto;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.wordmark p, span{
+    margin: 0;
+    font-family: 'Linux Biolinum', 'Georgia', 'Times', 'Source Serif Pro', serif;
+}
+
+.wordmark p{
+    text-transform: uppercase;
+}
+
+.wordmark span{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* 
+ * nav styles 
+ */
+nav{
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* 
+ * anchors styles 
+ */
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.anchors table {
+    border: solid 1px lightgray;
+    border-collapse: collapse;
+    background-color: rgb(249, 249, 249);
+}
+
+.anchors table th, td{
+    border: solid 1px lightgray;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.anchors table caption {
+    margin: 10px 0 5px 0;
+    background-color: rgb(212, 242, 206);
+}
+
+.anchors figure {
+    text-align: center;
+}
+
+/* 
+ * aside styles 
+ */
+aside {
+    border-right: solid 1px #cdcdcd;
+}
+
+aside h1 {
+    font-size: 16px;
+    font-style: normal;
+}
+ 
+/* 
+ * main styles 
+ */
+main h1, h2 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 28.8px;
+    font-style: italic;
+}
+
+main table {
+    border-collapse: collapse;
+    border: 1px solid lightgrey;
+    margin-top: 15px;
+}
+
+main table th, td{
+    border: 1px solid lightgrey;
+    padding: 8px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+main a {
+    font-style: italic;
+}
+
+main table th {
+    background-color: rgb(234, 236, 240)
+}
+
+/* 
+ * footer styles 
+ */
+footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    margin-left: 10px;
+}
+
+footer span {
+    font-size: 14px;
+}
